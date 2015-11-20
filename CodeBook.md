@@ -10,6 +10,6 @@ You must download the data "UCI HAR Dataset" into your working directory.  The s
 
 (4) Combines these tables into one table called "alldata"
 
-(5) Creates two new tables called "means_act" and "means_subj" which average the observations over the activity and subject respectively
+(5) Takes the average of each measurement type for each participant and activity in "means_all"
 
-(6)Combines these tables into the output table "means_all"
+The final output is a dataframe in the variable "means_all".  The rows correspond to the measurement being taken, while the columns correspond to the activity and subject.  Thus, the column labeled "Walking.2" is for the participant number 2 while walking.
